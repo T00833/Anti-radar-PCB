@@ -1,0 +1,285 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "eee59f22-2ded-42e9-84fe-88f9b8785b91")
+	(paper "A4")
+	(lib_symbols)
+	(text "CANH	CANL"
+		(exclude_from_sim no)
+		(at 139.7 171.45 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "2f4b65ae-8190-47a7-a1f8-59eba1b9827f")
+	)
+	(text "UART/\nI2C/\nSPI/\nUSB"
+		(exclude_from_sim no)
+		(at 165.1 69.088 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+				(thickness 0.6096)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "70455733-31a1-400b-9b5e-22893b7030ea")
+	)
+	(text "UART"
+		(exclude_from_sim no)
+		(at 157.734 124.46 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "f76cac29-9632-4017-9197-63b9de591e97")
+	)
+	(text_box "MCU"
+		(exclude_from_sim no)
+		(at 132.08 80.01 0)
+		(size 67.31 35.56)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 194 194 0 1)
+		)
+		(effects
+			(font
+				(size 7.62 7.62)
+				(thickness 1.524)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "13448bab-e32c-461c-bd1e-321f463f563f")
+	)
+	(text_box "CAN\nTRANSCEIVER"
+		(exclude_from_sim no)
+		(at 123.19 135.89 0)
+		(size 38.1 30.48)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 221 133 0 1)
+		)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.4763)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "1a4f9d74-d2d4-4dee-8940-3b70ed4a863a")
+	)
+	(text_box "GPS\nMODULE"
+		(exclude_from_sim no)
+		(at 140.97 36.83 0)
+		(size 43.18 21.59)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 0 194 194 1)
+		)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(thickness 1.016)
+				(bold yes)
+			)
+		)
+		(uuid "b7304cff-96ca-4bc3-a8e7-0f46a67c5024")
+	)
+	(text_box "GNSS\nANTENNA"
+		(exclude_from_sim no)
+		(at 207.01 36.83 0)
+		(size 33.02 20.32)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 255 255 194 1)
+		)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.635)
+				(color 0 72 72 1)
+			)
+		)
+		(uuid "bcd9dc86-394c-48db-8326-9ded34fcc3a7")
+	)
+	(text_box "CAN BUS"
+		(exclude_from_sim no)
+		(at 115.57 174.8454 0)
+		(size 50.8 8.0346)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 0 132 132 1)
+		)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.4763)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "c112f7de-5664-49de-bff5-21cf4e5ee18b")
+	)
+	(text_box "Bluetooth\nAntenna"
+		(exclude_from_sim no)
+		(at 208.28 90.17 0)
+		(size 39.37 20.32)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 59 215 255 1)
+		)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
+				(color 96 95 138 1)
+			)
+		)
+		(uuid "cd0bdb08-cb5d-499d-b067-0c16f3bd60cd")
+	)
+	(polyline
+		(pts
+			(xy 147.32 115.57) (xy 147.32 135.89)
+		)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 255 0 0 1)
+		)
+		(uuid "40bc36b6-48f4-4d6e-8270-e4f43162e3f1")
+	)
+	(polyline
+		(pts
+			(xy 184.15 45.72) (xy 207.01 45.72)
+		)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "60551818-abec-47d9-84f8-d4378ceac781")
+	)
+	(polyline
+		(pts
+			(xy 142.24 165.1) (xy 142.24 175.26)
+		)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 0 194 194 1)
+		)
+		(uuid "605dabc2-7462-489f-92d8-b7b0e51fe8d8")
+	)
+	(polyline
+		(pts
+			(xy 137.16 165.1) (xy 137.16 175.26)
+		)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 255 0 0 1)
+		)
+		(uuid "7612b8a1-8923-4130-a47d-a7b14c755bde")
+	)
+	(polyline
+		(pts
+			(xy 172.72 58.42) (xy 172.72 80.01)
+		)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 0 132 0 1)
+		)
+		(uuid "8e1e3301-6062-4f3b-97e7-1d563e3ef4cd")
+	)
+	(polyline
+		(pts
+			(xy 199.39 99.06) (xy 208.28 99.06)
+		)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 0 0 194 1)
+		)
+		(uuid "900ea89a-8bdb-41f5-b911-9d33bc8c6d26")
+	)
+	(polyline
+		(pts
+			(xy 147.32 134.62) (xy 147.32 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0582cb5-87bd-4869-901e-a9d050fc257f")
+	)
+	(polyline
+		(pts
+			(xy 157.48 58.42) (xy 157.48 80.01)
+		)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 255 0 0 1)
+		)
+		(uuid "e79216ee-c4c2-4550-a63e-42f0eef18381")
+	)
+	(polyline
+		(pts
+			(xy 149.86 115.57) (xy 149.86 135.89)
+		)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 0 132 0 1)
+		)
+		(uuid "f021084a-8b83-4a7d-953b-8edcded08e16")
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

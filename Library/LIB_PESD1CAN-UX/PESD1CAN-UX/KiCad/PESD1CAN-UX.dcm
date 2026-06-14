@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PESD1CAN-UX
+D NXP PESD1CAN, Dual Bi-Directional TVS Diode, 3-Pin SOT-23
+K
+F https://assets.nexperia.com/documents/data-sheet/PESD1CAN-U.pdf
+$ENDCMP
+#
+#End Doc Library

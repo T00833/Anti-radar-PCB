@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP KW47B42ZB7AFTB
+D KW47: Automotive Bluetooth Core 6 MCUs with Channel Sounding Localization for Access and Telematics 7x7 48-pin HVQFN
+K
+F https://www.nxp.com/docs/en/data-sheet/KW47DS.pdf
+$ENDCMP
+#
+#End Doc Library
