@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP KCM55WR71H476MH13K
+D Specialty Ceramic Capacitors 50VDC 47F 20% X7R AEC-Q200
+K
+F https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/KCM55_E.pdf
+$ENDCMP
+#
+#End Doc Library

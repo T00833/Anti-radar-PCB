@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NRS8040T470MJGK
+D Inductor Power Shielded Wirewound 47uH 20% 100KHz Ferrite 1.5A 0.182Ohm DCR 3131 T/R
+K
+F https://ds.yuden.co.jp/TYCOMPAS/ap/specSheet?pn=LSXNH8080YKL470MJG
+$ENDCMP
+#
+#End Doc Library
