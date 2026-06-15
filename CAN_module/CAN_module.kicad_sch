@@ -4,10 +4,29 @@
 	(generator_version "10.0")
 	(uuid "eee59f22-2ded-42e9-84fe-88f9b8785b91")
 	(paper "A4")
+	(title_block
+		(title "Schemat blokowy modułu PCB antyradar-CAN")
+		(date "2026-06-15")
+		(rev "2026-06-15")
+		(company "Tobiasz Kobza; Mikołaj Krok; Adam Michalik")
+	)
 	(lib_symbols)
+	(text "GPIO\n"
+		(exclude_from_sim no)
+		(at 93.218 69.342 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "1c4c92b4-a51a-44cd-ab63-644ca1a77719")
+	)
 	(text "CANH	CANL"
 		(exclude_from_sim no)
-		(at 139.7 171.45 0)
+		(at 118.11 171.45 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -18,9 +37,48 @@
 		)
 		(uuid "2f4b65ae-8190-47a7-a1f8-59eba1b9827f")
 	)
+	(text "VCC 3.3V"
+		(exclude_from_sim no)
+		(at 92.456 105.918 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "2fe44fef-eb28-4bde-b0bb-c67afadecd01")
+	)
+	(text "VPA_2P4GHZ"
+		(exclude_from_sim no)
+		(at 197.358 94.742 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+				(thickness 0.6096)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "38a779ac-2617-4b9b-baf5-fd3ebea5fcbe")
+	)
+	(text "XTAL"
+		(exclude_from_sim no)
+		(at 169.672 141.478 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.762)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "4d04c46f-bb0c-4807-accd-5f0e7f0dfe92")
+	)
 	(text "UART/\nI2C/\nSPI/\nUSB"
 		(exclude_from_sim no)
-		(at 165.1 69.088 0)
+		(at 143.51 69.088 0)
 		(effects
 			(font
 				(size 3.048 3.048)
@@ -31,12 +89,51 @@
 		)
 		(uuid "70455733-31a1-400b-9b5e-22893b7030ea")
 	)
-	(text "UART"
+	(text "CAN0_RX"
 		(exclude_from_sim no)
-		(at 157.734 124.46 0)
+		(at 115.57 125.222 0)
 		(effects
 			(font
-				(size 3.81 3.81)
+				(size 2.54 2.54)
+				(thickness 0.762)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "bcdad77c-d5a2-4c02-8b8b-cdf6169661a8")
+	)
+	(text "EXTAL\n"
+		(exclude_from_sim no)
+		(at 172.212 129.54 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.762)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "c8858768-c5d6-486a-afa0-22c4969e36c2")
+	)
+	(text "RF_IN"
+		(exclude_from_sim no)
+		(at 174.752 41.656 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+				(thickness 0.6096)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "ef8d54fc-a2c2-404d-ac59-db3961aabfbb")
+	)
+	(text "CAN0_TX"
+		(exclude_from_sim no)
+		(at 137.16 125.222 0)
+		(effects
+			(font
+				(size 2.54 2.54)
 				(thickness 0.762)
 				(bold yes)
 				(color 0 0 0 1)
@@ -46,7 +143,7 @@
 	)
 	(text_box "MCU"
 		(exclude_from_sim no)
-		(at 132.08 80.01 0)
+		(at 110.49 80.01 0)
 		(size 67.31 35.56)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -69,7 +166,7 @@
 	)
 	(text_box "CAN\nTRANSCEIVER"
 		(exclude_from_sim no)
-		(at 123.19 135.89 0)
+		(at 101.6 135.89 0)
 		(size 38.1 30.48)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -89,9 +186,55 @@
 		)
 		(uuid "1a4f9d74-d2d4-4dee-8940-3b70ed4a863a")
 	)
+	(text_box "Sygnał z\nantyradaru"
+		(exclude_from_sim no)
+		(at 21.59 50.8 0)
+		(size 46.99 29.21)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 164 88 155 1)
+		)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(thickness 1.016)
+				(bold yes)
+				(color 188 0 0 1)
+			)
+		)
+		(uuid "90f72b50-d50f-48ac-9eff-5d6655eb2975")
+	)
+	(text_box "Oscylator\nkwarcowy\n32MHz"
+		(exclude_from_sim no)
+		(at 187.96 127.8861 0)
+		(size 38.1 21.9739)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 81 164 113 1)
+		)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 1.016)
+				(bold yes)
+				(color 38 73 1 1)
+			)
+		)
+		(uuid "a52fa949-61e1-48f4-9dbe-a23b896aa683")
+	)
 	(text_box "GPS\nMODULE"
 		(exclude_from_sim no)
-		(at 140.97 36.83 0)
+		(at 119.38 36.83 0)
 		(size 43.18 21.59)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -113,7 +256,7 @@
 	)
 	(text_box "GNSS\nANTENNA"
 		(exclude_from_sim no)
-		(at 207.01 36.83 0)
+		(at 185.42 36.83 0)
 		(size 33.02 20.32)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -135,7 +278,7 @@
 	)
 	(text_box "CAN BUS"
 		(exclude_from_sim no)
-		(at 115.57 174.8454 0)
+		(at 93.98 174.8454 0)
 		(size 50.8 8.0346)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -157,7 +300,7 @@
 	)
 	(text_box "Bluetooth\nAntenna"
 		(exclude_from_sim no)
-		(at 208.28 90.17 0)
+		(at 217.17 90.17 0)
 		(size 39.37 20.32)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -178,9 +321,43 @@
 		)
 		(uuid "cd0bdb08-cb5d-499d-b067-0c16f3bd60cd")
 	)
+	(text_box "Zasilanie z \nzapalniczki samochodowej ≈12V"
+		(exclude_from_sim no)
+		(at 19.05 96.52 0)
+		(size 48.26 29.21)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 164 22 55 1)
+		)
+		(effects
+			(font
+				(size 3.048 3.048)
+				(thickness 0.6096)
+				(bold yes)
+				(color 170 219 16 1)
+			)
+		)
+		(uuid "cd347907-e318-4280-94e9-85c3d8c60a1f")
+	)
 	(polyline
 		(pts
-			(xy 147.32 115.57) (xy 147.32 135.89)
+			(xy 204.47 99.06) (xy 217.17 99.06)
+		)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 0 0 194 1)
+		)
+		(uuid "299aeb18-95d1-40b5-b27b-68b319cd1311")
+	)
+	(polyline
+		(pts
+			(xy 125.73 115.57) (xy 125.73 135.89)
 		)
 		(stroke
 			(width 0.508)
@@ -191,7 +368,29 @@
 	)
 	(polyline
 		(pts
-			(xy 184.15 45.72) (xy 207.01 45.72)
+			(xy 162.56 115.57) (xy 162.56 132.08)
+		)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 74 91 66 1)
+		)
+		(uuid "40de08a2-11af-47db-9839-f2c90e1798b3")
+	)
+	(polyline
+		(pts
+			(xy 68.58 73.66) (xy 113.03 73.66)
+		)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 255 20 148 1)
+		)
+		(uuid "430a613c-fefa-491a-bd2d-73e75a07560d")
+	)
+	(polyline
+		(pts
+			(xy 162.56 45.72) (xy 185.42 45.72)
 		)
 		(stroke
 			(width 0.508)
@@ -202,7 +401,7 @@
 	)
 	(polyline
 		(pts
-			(xy 142.24 165.1) (xy 142.24 175.26)
+			(xy 120.65 165.1) (xy 120.65 175.26)
 		)
 		(stroke
 			(width 0.508)
@@ -213,7 +412,7 @@
 	)
 	(polyline
 		(pts
-			(xy 137.16 165.1) (xy 137.16 175.26)
+			(xy 115.57 165.1) (xy 115.57 175.26)
 		)
 		(stroke
 			(width 0.508)
@@ -224,7 +423,18 @@
 	)
 	(polyline
 		(pts
-			(xy 172.72 58.42) (xy 172.72 80.01)
+			(xy 158.75 115.57) (xy 158.75 137.16)
+		)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 74 91 66 1)
+		)
+		(uuid "84537228-30d5-42c1-bcb5-53a491221142")
+	)
+	(polyline
+		(pts
+			(xy 151.13 58.42) (xy 151.13 80.01)
 		)
 		(stroke
 			(width 0.508)
@@ -235,7 +445,7 @@
 	)
 	(polyline
 		(pts
-			(xy 199.39 99.06) (xy 208.28 99.06)
+			(xy 177.8 99.06) (xy 204.47 99.06)
 		)
 		(stroke
 			(width 0.508)
@@ -246,7 +456,7 @@
 	)
 	(polyline
 		(pts
-			(xy 147.32 134.62) (xy 147.32 135.89)
+			(xy 125.73 134.62) (xy 125.73 135.89)
 		)
 		(stroke
 			(width 0)
@@ -256,7 +466,7 @@
 	)
 	(polyline
 		(pts
-			(xy 157.48 58.42) (xy 157.48 80.01)
+			(xy 135.89 58.42) (xy 135.89 80.01)
 		)
 		(stroke
 			(width 0.508)
@@ -267,7 +477,18 @@
 	)
 	(polyline
 		(pts
-			(xy 149.86 115.57) (xy 149.86 135.89)
+			(xy 187.96 137.16) (xy 158.75 137.16)
+		)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 74 91 66 1)
+		)
+		(uuid "eefae94a-d438-4d30-bbd6-1381b12057cd")
+	)
+	(polyline
+		(pts
+			(xy 128.27 115.57) (xy 128.27 135.89)
 		)
 		(stroke
 			(width 0.508)
@@ -275,6 +496,39 @@
 			(color 0 132 0 1)
 		)
 		(uuid "f021084a-8b83-4a7d-953b-8edcded08e16")
+	)
+	(polyline
+		(pts
+			(xy 113.03 73.66) (xy 113.03 80.01)
+		)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 255 20 148 1)
+		)
+		(uuid "f5f0a9d6-8669-46b5-b560-893b90e47bbc")
+	)
+	(polyline
+		(pts
+			(xy 67.31 110.49) (xy 110.49 110.49)
+		)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 234 255 30 1)
+		)
+		(uuid "fe3c55b7-9428-4223-8783-50cad3bed241")
+	)
+	(polyline
+		(pts
+			(xy 187.96 132.08) (xy 162.56 132.08)
+		)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 74 91 66 1)
+		)
+		(uuid "ffc6c361-0e4a-4d3d-ba79-944cc32f1ed3")
 	)
 	(sheet_instances
 		(path "/"
