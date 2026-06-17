@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NEO-M8L-06B
+D NEO-M8L RF Receiver BeiDou, Galileo, GLONASS, GNSS, GPS 1.561GHz, 1.575GHz, 1.602GHz -160dBm
+K
+F https://content.u-blox.com/sites/default/files/NEO-M8L-06B-ADR450_DataSheet_UBX-20058645.pdf
+$ENDCMP
+#
+#End Doc Library
