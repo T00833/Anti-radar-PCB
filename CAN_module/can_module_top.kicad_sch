@@ -11,7 +11,7 @@
 		(company "Tobiasz Kobza; Mikołaj Krok; Adam Michalik")
 	)
 	(lib_symbols
-		(symbol "Antiradar:2450AT42E010B001E"
+		(symbol "Antiradar:Antenna BT - 2450AT18D0100E"
 			(pin_names
 				(offset 0.254)
 			)
@@ -30,7 +30,7 @@
 					)
 				)
 			)
-			(property "Value" "Antena BT - 2450AT42E010B001E"
+			(property "Value" "Ant BT - 2450AT18D0100E"
 				(at 27.94 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -40,7 +40,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Antyradar_footprints:2450AT42E010B_JOT"
+			(property "Footprint" "Antyradar_footprints:2450AT18D0100E_JOT"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -52,7 +52,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "2450AT42E010B001E"
+			(property "Datasheet" "2450AT18D0100E"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -85,7 +85,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "2450AT42E010B001E"
+			(property "ki_keywords" "2450AT18D0100E"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -96,7 +96,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "2450AT42E010B_JOT 2450AT42E010B_JOT-M 2450AT42E010B_JOT-L"
+			(property "ki_fp_filters" "2450AT18D0100E_JOT 2450AT18D0100E_JOT-M 2450AT18D0100E_JOT-L"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -107,7 +107,7 @@
 					)
 				)
 			)
-			(symbol "2450AT42E010B001E_0_1"
+			(symbol "Antenna BT - 2450AT18D0100E_0_1"
 				(polyline
 					(pts
 						(xy 7.62 5.08) (xy 7.62 -7.62)
@@ -159,7 +159,7 @@
 				(pin unspecified line
 					(at 0 0 0)
 					(length 7.62)
-					(name "FEEDING_POINT"
+					(name "FEED/GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -174,10 +174,12 @@
 						)
 					)
 				)
-				(pin no_connect line
+			)
+			(symbol "Antenna BT - 2450AT18D0100E_1_1"
+				(pin power_in line
 					(at 0 -2.54 0)
 					(length 7.62)
-					(name "NC"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -192,8 +194,6 @@
 						)
 					)
 				)
-			)
-			(symbol "2450AT42E010B001E_1_1"
 				(pin power_in line
 					(at 55.88 -2.54 180)
 					(length 7.62)
@@ -215,7 +215,7 @@
 				(pin power_in line
 					(at 55.88 0 180)
 					(length 7.62)
-					(name "GND"
+					(name "GND/FEED"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8671,339 +8671,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:L"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "L"
-				(at -1.27 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "L"
-				(at 1.905 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Inductor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "inductor choke coil reactor magnetic"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "L_0_1"
-				(arc
-					(start 0 2.54)
-					(mid 0.6323 1.905)
-					(end 0 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 1.27)
-					(mid 0.6323 0.635)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.6323 -0.635)
-					(end 0 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.27)
-					(mid 0.6323 -1.905)
-					(end 0 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "L_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "RES_10k_10%_1/4W_0805_1"
 			(pin_numbers
 				(hide yes)
@@ -9840,12 +9507,6 @@
 		(uuid "53260ec2-4cac-4fba-9cf5-f52fd46919fc")
 	)
 	(junction
-		(at 276.86 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5fd94015-3344-4513-8002-9b48e230a3ab")
-	)
-	(junction
 		(at 243.84 127)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9928,6 +9589,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9a099be8-2b53-4273-903f-356ab57c7849")
+	)
+	(junction
+		(at 276.86 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9b97c676-ba48-4ed9-b2e5-cd5b6e30c4ca")
 	)
 	(junction
 		(at 22.86 185.42)
@@ -11115,7 +10782,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 27.94) (xy 198.12 27.94)
+			(xy 187.96 27.94) (xy 220.98 27.94)
 		)
 		(stroke
 			(width 0)
@@ -11573,6 +11240,16 @@
 		)
 		(uuid "1192f225-9672-4e31-8f8f-215a54557494")
 	)
+	(label "CAN_P"
+		(at 67.31 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1aa4ea2a-507c-4e1c-be15-1ffde3c4b6ae")
+	)
 	(label "RS_CAN"
 		(at 67.31 175.26 0)
 		(effects
@@ -11692,6 +11369,16 @@
 			(justify right bottom)
 		)
 		(uuid "9e2988e2-84ae-48c9-8fd4-60fc86f02293")
+	)
+	(label "CAN_N"
+		(at 67.31 180.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a5294f94-56b3-4743-8521-cd94b7b46fcf")
 	)
 	(label "CAN0_RX"
 		(at 148.59 66.04 0)
@@ -12645,94 +12332,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Antiradar:2450AT42E010B001E")
-		(at 220.98 27.94 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "171a17d6-bd7a-452d-9ee1-2243c3b211a3")
-		(property "Reference" "U3"
-			(at 248.92 17.78 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "Antena BT - 2450AT42E010B001E"
-			(at 248.92 20.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "Antyradar_footprints:2450AT42E010B_JOT"
-			(at 220.98 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "2450AT42E010B001E"
-			(at 220.98 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 220.98 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "2465bd91-675f-458f-84d8-f0b4e5ba83eb")
-		)
-		(pin "4"
-			(uuid "6433f91c-dc04-4925-a569-f7d0a92cf188")
-		)
-		(pin "1"
-			(uuid "c32d0829-0f9c-4c74-b1d4-7ac1c5bd0236")
-		)
-		(pin "2"
-			(uuid "63f5cf5c-c84f-43b2-a07e-3ec2a3e85dbe")
-		)
-		(instances
-			(project "CAN_module"
-				(path "/b2f48ca0-b9f2-43ed-bfaa-cdba7794cee1"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 171.45 115.57 0)
 		(mirror x)
@@ -13437,86 +13036,6 @@
 			(project "CAN_module"
 				(path "/b2f48ca0-b9f2-43ed-bfaa-cdba7794cee1"
 					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 217.17 27.94 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2a10e3a1-70f3-4147-9ac4-6023fc90b8eb")
-		(property "Reference" "C6"
-			(at 217.17 20.32 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "C"
-			(at 217.17 22.86 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 220.98 26.9748 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 217.17 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 217.17 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "98b79826-5073-4964-a211-77d2ad922650")
-		)
-		(pin "1"
-			(uuid "4d8e7f25-0f44-47cd-a8b3-7afa2237bad8")
-		)
-		(instances
-			(project "CAN_module"
-				(path "/b2f48ca0-b9f2-43ed-bfaa-cdba7794cee1"
-					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -14744,6 +14263,94 @@
 			(project "CAN_module"
 				(path "/b2f48ca0-b9f2-43ed-bfaa-cdba7794cee1"
 					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Antiradar:Antenna BT - 2450AT18D0100E")
+		(at 220.98 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d28e2ce-37ab-4990-bf53-e30f11d370eb")
+		(property "Reference" "U3"
+			(at 248.92 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "Ant BT - 2450AT18D0100E"
+			(at 248.92 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "Antyradar_footprints:2450AT18D0100E_JOT"
+			(at 220.98 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "2450AT18D0100E"
+			(at 220.98 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 220.98 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "dd6f1cce-3f29-4dae-bbef-df6ddbacc507")
+		)
+		(pin "1"
+			(uuid "cb3600b2-cef3-4f99-a777-f8afcd36afd9")
+		)
+		(pin "4"
+			(uuid "bde0235c-1e32-43fb-a063-9c0864b49d81")
+		)
+		(pin "2"
+			(uuid "435fcdc2-f598-4fa5-b6dc-dda6e7b7083f")
+		)
+		(instances
+			(project "CAN_module"
+				(path "/b2f48ca0-b9f2-43ed-bfaa-cdba7794cee1"
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -16728,86 +16335,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 201.93 27.94 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "92b70500-5667-47eb-a6a1-55df4a9f4a27")
-		(property "Reference" "C5"
-			(at 201.93 20.32 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "C"
-			(at 201.93 22.86 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 205.74 26.9748 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 201.93 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 201.93 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "017f18dc-67cc-4a5a-8e5a-c047587e05d3")
-		)
-		(pin "1"
-			(uuid "2a3fd020-041c-4615-918c-15fd066d83d1")
-		)
-		(instances
-			(project "CAN_module"
-				(path "/b2f48ca0-b9f2-43ed-bfaa-cdba7794cee1"
-					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Antiradar:Screw_Terminal_01x02")
 		(at 25.4 111.76 0)
 		(mirror y)
@@ -18244,86 +17771,6 @@
 			(project "CAN_module"
 				(path "/b2f48ca0-b9f2-43ed-bfaa-cdba7794cee1"
 					(reference "#PWR031")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
-		(at 209.55 27.94 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a79c6bee-daf3-4df7-ad71-af11b5916bac")
-		(property "Reference" "L2"
-			(at 209.55 22.86 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "L"
-			(at 209.55 25.4 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 209.55 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 209.55 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Inductor"
-			(at 209.55 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d992fcd7-c2b3-40b9-8d6d-fb900655ec1a")
-		)
-		(pin "2"
-			(uuid "4a4be7f3-4631-4bfc-8fd5-cbb7872473e1")
-		)
-		(instances
-			(project "CAN_module"
-				(path "/b2f48ca0-b9f2-43ed-bfaa-cdba7794cee1"
-					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -20723,6 +20170,84 @@
 			(project "CAN_module"
 				(path "/b2f48ca0-b9f2-43ed-bfaa-cdba7794cee1"
 					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 220.98 30.48 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "efb7ab91-e4b5-41a1-87d9-f1325eb7e13e")
+		(property "Reference" "#PWR054"
+			(at 220.98 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 220.98 34.036 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 220.98 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "de43bb40-07ce-416d-a92a-07e782c3fd36")
+		)
+		(instances
+			(project "CAN_module"
+				(path "/b2f48ca0-b9f2-43ed-bfaa-cdba7794cee1"
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
